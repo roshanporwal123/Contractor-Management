@@ -1,8 +1,9 @@
 import { io } from "socket.io-client";
 
-const SERVER_URL = import.meta.env.VITE_SERVER_URL || "https://contractor-backend.vercel.app/";
+const SERVER_URL = import.meta.env.VITE_SERVER_URL || "https://contractor-backend.vercel.app";
 
 let socket = null;
+
 
 export const connectSocket = () => {
   if (!socket) {
